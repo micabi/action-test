@@ -1,7 +1,10 @@
 name: github-actions test
 on: [push]
 jobs:
-  my_first_job:
     name: My first job
-  my_second_job:
-    name: My second job
+    runs-on: ubuntu-latest
+    steps:
+      - name: greet
+        run: echo "Hello, github actions"
+      - name: show ubuntu details
+        run: lsb_release -a
