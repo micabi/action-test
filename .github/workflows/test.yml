@@ -1,7 +1,7 @@
 name: github-actions test
 on: [push]
 jobs:
-check-bats-version:
-runs-on: ubuntu-latest
-steps:
-  - run: echo "Hello github-actions"
+  my_first_job:
+    name: My first job
+  my_second_job:
+    name: My second job
